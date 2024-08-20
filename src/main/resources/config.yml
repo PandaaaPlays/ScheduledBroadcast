@@ -1,0 +1,10 @@
+# Use this document to configure the settings of your ScheduledBroadcast Plugin.
+# If you require any assistance with the plugin, please contact me on discord (https://discord.io/AnimalPlugins).
+#   _____         ___ _                 _   _
+#  |     |___ ___|  _|_|___ _ _ ___ ___| |_|_|___ ___
+#  |   --| . |   |  _| | . | | |  _| .'|  _| | . |   |
+#  |_____|___|_|_|_| |_|_  |___|_| |__,|_| |_|___|_|_|
+#                      |___|
+
+# The message displayed when the configuration of the plugin is reloaded.
+plugin-reload: "&7&o(( The ScheduledBroadcast extension was also reloaded. ))"

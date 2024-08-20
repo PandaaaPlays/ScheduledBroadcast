@@ -1,0 +1,88 @@
+# Use this document to configure the messages of your AutomaticBroadcast Plugin.
+# If you require any assistance with the plugin, please contact me on discord (https://discord.io/AnimalPlugins).
+#   _____     _                 _   _     _____               _             _
+#  |  _  |_ _| |_ ___ _____ ___| |_|_|___| __  |___ ___ ___ _| |___ ___ ___| |_
+#  |     | | |  _| . |     | .'|  _| |  _| __ -|  _| . | .'| . |  _| .'|_ -|  _|
+#  |__|__|___|_| |___|_|_|_|__,|_| |_|___|_____|_| |___|__,|___|___|__,|___|_|
+#
+# Placeholders:
+# Use '&' to use the basic minecraft color code.
+# The plugin also supports hex colors : '&#123456'
+# To center a message line, put '[centered]' at its start.
+# To create color gradients, you can use : https://rgb.birdflop.com/
+# >> -> Changes automatically to the double arrow character.
+# AutomaticBroadcast also supports PlaceHolderAPI placeholders (make sure the extension(s) you need are downloaded!)
+# Please refer to PAPI's wiki : https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders
+
+# The broadcasts that will be displayed automatically.
+# Time-based broadcast (broadcast that are sent on specific real-world times)
+scheduled-broadcasts:
+  # The name of the broadcast, basically a key word to know which broadcast is which (does not change anything in-game).
+  # Make sure every broadcast has a different name (no duplicates!)
+  weekly:
+    # A list of messages that will be displayed when the broadcast occurs.
+    messages:
+      - "[centered]&a&l << &2&l! &a&l>> Time-based Broadcast"
+      - "[centered]&fThis broadcast is sent only &atwice a week!"
+      - "[centered]&fModify the configuration for time based messages."
+      - "[centered]&aThe options are : monthly, weekly, daily, one-time & more!"
+    # What will occur when a player clicks on the broadcast :
+    # "*" -> Suggests a message in the player's chat. (Ex.: *exemple -> Suggests "exemple")
+    # "/" -> Suggests a command in the player's chat. (Ex.: /exemple -> Suggests "/exemple")
+    # Anything else opens a link if IT IS VALID! (Make sure to add "https://...")
+    click: "/automaticbroadcast"
+    # The tooltip that will be displayed when the players hover over the message.
+    hover:
+      - "    &a&l<< &2&l! &a&l>> Schedule"
+      - "&2&l* &fMessage displayed on &aMonday &f& &aTuesday&f."
+      - "&2&l* &fTime : &a&n23:00:00&f & &a&n23:10:00"
+    # The sound played for every player receiving the broadcast.
+    # Please refer to the bukkit list of sounds : https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    # The player(s) that should not receive this broadcast.
+    exempted-players:
+      - exempted-player1
+      - exempted-player2
+    # The command(s) executed by the console along with the broadcast.
+    console-commands:
+      - "give @a diamond"
+    # The schedule of the broadcast. This tells the plugin when to actually send them.
+    schedule:
+      # The type of the schedule (Monthly, Weekly, Daily, Hourly, One-Time)
+      type: weekly # Monthly, Weekly, Daily, Hourly, One-Time
+      # On which days of the week should the broadcast be sent?
+      days:
+        - Monday
+        - Tuesday
+      # At which time(s) of the day(s) should the broadcast be sent?
+      # Please note that changing the seconds won't affect the actual seconds in real life.
+      times:
+        - "23:00:00"
+        - "23:10:00"
+
+    # Other options of schedules must follow the following format.
+    #schedule:
+      #type: monthly
+      # The day(s) of the month to display the broadcast.
+      #days-of-month:
+        #- 19
+        #- 20
+      #times:
+        #- "23:00:00"
+    #schedule:
+      #type: daily
+      #times:
+        #- "23:00:00"
+    #schedule:
+      #type: hourly
+      # The time (minutes) when to display the broadcast. (Example: 36 means 1:36, 2:36, etc.)
+      #minutes:
+        #- 36
+        #- 40
+    #schedule:
+      #type: one-time
+      # On which date(s) (format YYYY-MM-DD) should the broadcast be sent?
+      #dates:
+        #- "2024-08-19"
+      #times:
+        #- "23:00:00"

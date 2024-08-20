@@ -3,6 +3,7 @@ package ca.pandaaa.scheduledbroadcast;
 import ca.pandaaa.automaticbroadcast.AutomaticBroadcast;
 import ca.pandaaa.automaticbroadcast.api.BroadcastAPI;
 import ca.pandaaa.automaticbroadcast.api.PluginReloadEvent;
+import ca.pandaaa.automaticbroadcast.utils.Metrics;
 import ca.pandaaa.scheduledbroadcast.broadcast.BroadcastScheduler;
 import ca.pandaaa.scheduledbroadcast.utils.ConfigManager;
 import org.bukkit.Bukkit;
@@ -33,6 +34,9 @@ public final class ScheduledBroadcast extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        int pluginId = 23108;
+        Metrics metrics = new Metrics(this, pluginId);
+
         AutomaticBroadcast automaticBroadcast = (AutomaticBroadcast) Bukkit.getPluginManager().getPlugin("AutomaticBroadcast");
         if(automaticBroadcast == null) {
             getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&cAutomaticBroadcast not found."));

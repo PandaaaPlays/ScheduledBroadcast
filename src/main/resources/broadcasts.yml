@@ -1,9 +1,9 @@
-# Use this document to configure the messages of your AutomaticBroadcast Plugin.
+# Use this document to configure the messages of your ScheduledBroadcast Plugin.
 # If you require any assistance with the plugin, please contact me on discord (https://discord.io/AnimalPlugins).
-#   _____     _                 _   _     _____               _             _
-#  |  _  |_ _| |_ ___ _____ ___| |_|_|___| __  |___ ___ ___ _| |___ ___ ___| |_
-#  |     | | |  _| . |     | .'|  _| |  _| __ -|  _| . | .'| . |  _| .'|_ -|  _|
-#  |__|__|___|_| |___|_|_|_|__,|_| |_|___|_____|_| |___|__,|___|___|__,|___|_|
+#   _____     _         _     _       _ _____               _             _
+#  |   __|___| |_ ___ _| |_ _| |___ _| | __  |___ ___ ___ _| |___ ___ ___| |_
+#  |__   |  _|   | -_| . | | | | -_| . | __ -|  _| . | .'| . |  _| .'|_ -|  _|
+#  |_____|___|_|_|___|___|___|_|___|___|_____|_| |___|__,|___|___|__,|___|_|
 #
 # Placeholders:
 # Use '&' to use the basic minecraft color code.

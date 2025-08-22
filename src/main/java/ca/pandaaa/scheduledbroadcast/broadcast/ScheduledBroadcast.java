@@ -10,8 +10,8 @@ public class ScheduledBroadcast extends Broadcast {
 
     private final Schedule schedule;
 
-    public ScheduledBroadcast(String title, List<String> messages, Sound sound, List<String> hoverMessages, String clickMessage, List<String> exemptedPlayers, List<String> consoleCommands, Schedule schedule) {
-        super(title, messages, sound, hoverMessages, clickMessage, exemptedPlayers, consoleCommands);
+    public ScheduledBroadcast(String title, List<String> messages, Sound sound, List<String> hoverMessages, String clickMessage, List<String> exemptedPlayers, List<String> consoleCommands, String permission, Schedule schedule) {
+        super(title, messages, sound, hoverMessages, clickMessage, exemptedPlayers, consoleCommands, permission);
         this.schedule = schedule;
     }
 

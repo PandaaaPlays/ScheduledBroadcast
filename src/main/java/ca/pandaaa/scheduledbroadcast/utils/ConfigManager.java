@@ -88,4 +88,8 @@ public class ConfigManager {
                 return null;
         }
     }
+
+    public String getPermission(String broadcastTitle) {
+        return broadcasts.getString("scheduled-broadcasts." + broadcastTitle + ".permission");
+    }
 }

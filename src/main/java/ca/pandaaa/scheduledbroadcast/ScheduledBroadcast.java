@@ -95,7 +95,8 @@ public final class ScheduledBroadcast extends JavaPlugin implements Listener {
                             title, configManager.getBroadcastMessagesList(title),
                             configManager.getBroadcastSound(title), configManager.getBroadcastHoverList(title),
                             configManager.getBroadcastClick(title), configManager.getBroadcastExemptedPlayers(title),
-                            configManager.getBroadcastConsoleCommands(title), configManager.getSchedule(title));
+                            configManager.getBroadcastConsoleCommands(title), configManager.getPermission(title),
+                            configManager.getSchedule(title));
             broadcastList.add(broadcast);
         }
 

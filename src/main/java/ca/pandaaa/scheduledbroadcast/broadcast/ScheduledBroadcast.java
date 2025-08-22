@@ -27,7 +27,8 @@ public class ScheduledBroadcast extends Broadcast {
                 this.getHoverMessages(),
                 this.getClickMessage(),
                 this.getExemptedPlayers(),
-                this.getConsoleCommands()
+                this.getConsoleCommands(),
+                this.getPermission()
         );
     }
 }

@@ -59,6 +59,8 @@ scheduled-broadcasts:
       times:
         - "23:00:00"
         - "23:10:00"
+    # The permission needed to see the broadcast (leave empty for none!)
+    permission: automaticbroadcast.broadcast
 
     # Other options of schedules must follow the following format.
     #schedule:
